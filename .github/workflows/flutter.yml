@@ -18,21 +18,21 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
     steps:
     - uses: actions/checkout@v1
-    - name: Checkout Code
+      name: Checkout Code
     - uses: subosito/flutter-action@v1
-    - name: Setup Flutter
+      name: Setup Flutter
       with:
         channel: beta
     - run: flutter config --enable-web
-    - name: Enable Web Config
+      name: Enable Web Config
     - run: flutter pub get
-    - name: Get Packages
+      name: Get Packages
     - run: flutter format --dry-run --set-exit-if-changed .
-    - name: Format Flutter
+      name: Format Flutter
     - run: flutter analyze
-    - name: Analyze Flutter
+      name: Analyze Flutter
     - run: flutter test
-    - name: Run Flutter Tests
+      name: Run Flutter Tests
     - run: flutter build web
-    - name: Build Flutter for Web
+      name: Build Flutter for Web
     
