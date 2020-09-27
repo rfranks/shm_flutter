@@ -35,4 +35,8 @@ jobs:
       name: Run Flutter Tests
     - run: flutter build web
       name: Build Flutter for Web
+    - run: flutter pub global activate dartdoc
+      name: Activate DartDoc
+    - run: dartdoc
+      name: Running DartDoc
     
