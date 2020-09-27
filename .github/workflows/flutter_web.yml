@@ -37,6 +37,11 @@ jobs:
       name: Run Flutter Tests
     - run: flutter build web
       name: Build Flutter for Web
+    - uses: actions/upload-artifact@v2
+      name: Upload Web production artifacts
+      with:
+        name: web
+        path: build/web
     - run: flutter pub global activate dartdoc
       name: Activate DartDoc
     # run: dartdoc --sdk-dir=/opt/hostedtoolcache/flutter/1.22.0-12.1.pre-beta/
