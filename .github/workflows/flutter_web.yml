@@ -39,6 +39,6 @@ jobs:
       name: Build Flutter for Web
     - run: flutter pub global activate dartdoc
       name: Activate DartDoc
-    - run: dartdoc
+    - run: dartdoc --sdk-dir=/opt/hostedtoolcache/flutter/1.22.0-12.1.pre-beta/x64/bin/
       name: Running DartDoc
     
