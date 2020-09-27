@@ -1,5 +1,5 @@
 [![Build Status](https://api.cirrus-ci.com/github/rfranks/shm_flutter.svg)](https://cirrus-ci.com/github/rfranks/shm_flutter)
-![Flutter](https://github.com/rfranks/shm_flutter/workflows/FlutterCI/badge.svg)
+![Flutter](https://github.com/rfranks/shm_flutter/workflows/FlutterWeb/badge.svg)
 
 # shm_flutter
 
