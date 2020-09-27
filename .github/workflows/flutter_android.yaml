@@ -39,10 +39,20 @@ jobs:
         name: Analyze Flutter
       - run: flutter test
         name: Run Flutter Tests
-      - run: flutter build apk
+      - run: flutter build apk --split-per-abi
         name: Build Flutter for Android APK
       - run: flutter build appbundle
         name: Build Flutter for Android APP Bundle 
+      - uses: actions/upload-artifact@v2
+        name: Upload APK Artifact
+        with:
+          name: app-armeabi-v7a-release.apk
+          path: build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk
+      - uses: actions/upload-artifact@v2
+        name: Upload APK Artifact
+        with:
+          name: app.aab
+          path: build/app/outputs/bundle/release/app.aab 
       - run: flutter pub global activate dartdoc
         name: Activate DartDoc
       # - run: dartdoc --sdk-dir=/opt/hostedtoolcache/flutter/1.22.0-12.1.pre-beta/
