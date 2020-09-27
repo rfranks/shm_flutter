@@ -1,3 +1,5 @@
+[![Build Status](https://api.cirrus-ci.com/github/rfranks/shm_flutter.svg)](https://cirrus-ci.com/github/rfranks/shm_flutter)
+
 # shm_flutter
 
 A new Flutter project.
